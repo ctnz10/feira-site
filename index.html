@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07151b" />
+  <meta name="description" content="Uma viagem visual pela Puglia, no sul da Itália." />
+  <title>Puglia — O sul da Itália</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Puglia, início"><span class="brand-mark">P</span><span>PUGLIA<span class="brand-dot">.</span></span></a>
+    <nav class="nav">
+      <a href="#regiao">A região</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#video">Nosso vídeo</a>
+    </nav>
+    <a class="top-cta" href="#explorar">Explorar <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal"><span class="live-dot"></span> ITÁLIA · 40° 59′ N, 17° 06′ E</p>
+        <h1 class="hero-title" aria-label="Puglia"><span class="title-line">PUGLIA<span class="title-period">.</span></span></h1>
+        <p class="hero-subtitle reveal">Onde a <em>história</em> encontra o mar.</p>
+        <p class="hero-copy reveal">Uma viagem pelo encanto, pelas tradições e pelas paisagens do sul da Itália.</p>
+        <a class="button button-primary reveal" href="#regiao"><span>Descobrir a região</span><span class="button-icon">↓</span></a>
+      </div>
+      <div class="hero-side-label">SUL DA ITÁLIA <span></span> MAR ADRIÁTICO</div>
+      <div class="hero-bottom">
+        <span class="scroll-cue"><span class="scroll-line"></span> ROLE PARA EXPLORAR</span>
+        <span class="hero-index">01 <i>/</i> 05</span>
+      </div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+    </section>
+
+    <section class="intro section-pad" id="regiao">
+      <div class="section-label reveal"><span>01</span> / A REGIÃO</div>
+      <div class="intro-layout">
+        <h2 class="display-heading reveal">Um lugar onde<br>o tempo <em>desacelera.</em></h2>
+        <div class="intro-text reveal">
+          <p>No salto da “bota” italiana, a Puglia reúne águas azul-turquesa, cidades brancas, campos de oliveiras e uma herança cultural que atravessa séculos.</p>
+          <p>Entre o Mar Adriático e o Mar Jônico, cada vila conta uma história — e cada paisagem parece feita para ficar na memória.</p>
+          <a class="text-link" href="#lugares">Conheça os destaques <span>↘</span></a>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat reveal"><strong data-count="800">0</strong><span>km de litoral aproximados</span></div>
+        <div class="stat reveal"><strong>2 <small>mares</small></strong><span>Adriático e Jônico</span></div>
+        <div class="stat reveal"><strong>∞</strong><span>razões para se encantar</span></div>
+      </div>
+      <p class="small-note reveal">* Números aproximados e elementos ilustrativos para apresentação escolar.</p>
+    </section>
+
+    <section class="places section-pad" id="lugares">
+      <div class="section-label reveal"><span>02</span> / LUGARES INESQUECÍVEIS</div>
+      <div class="section-heading-row">
+        <h2 class="display-heading reveal">Belezas que<br><em>contam histórias.</em></h2>
+        <p class="section-description reveal">De vilarejos icônicos a cidades erguidas sobre o mar, Puglia é uma coleção de cenários únicos.</p>
+      </div>
+      <div class="place-grid">
+        <article class="place-card place-large reveal">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=85" alt="Costa mediterrânea com casas próximas ao mar" loading="lazy">
+          <div class="card-shade"></div><span class="card-number">01 / COSTA</span>
+          <div class="place-info"><p>MAR ADRIÁTICO</p><h3>Polignano<br>a Mare</h3><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="place-card reveal">
+          <img src="https://images.unsplash.com/photo-1600359756098-8bc9b9dc7a6d?auto=format&fit=crop&w=1000&q=85" alt="Casas tradicionais de pedra em uma vila italiana" loading="lazy">
+          <div class="card-shade"></div><span class="card-number">02 / TRADIÇÃO</span>
+          <div class="place-info"><p>CASAS TRADICIONAIS</p><h3>Alberobello</h3><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="place-card reveal">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85" alt="Cidade histórica italiana em tons claros" loading="lazy">
+          <div class="card-shade"></div><span class="card-number">03 / HISTÓRIA</span>
+          <div class="place-info"><p>A CIDADE BRANCA</p><h3>Ostuni</h3><span class="card-arrow">↗</span></div>
+        </article>
+      </div>
+      <p class="small-note reveal">As fotografias são ilustrativas; substitua-as por imagens específicas dos destinos para uma apresentação ainda mais fiel.</p>
+    </section>
+
+    <section class="culture section-pad" id="cultura">
+      <div class="culture-image" role="img" aria-label="Paisagem mediterrânea ensolarada"></div>
+      <div class="culture-overlay"></div>
+      <div class="culture-content">
+        <div class="section-label reveal"><span>03</span> / ALMA PUGLIESE</div>
+        <h2 class="display-heading reveal">Tradição em<br>cada <em>detalhe.</em></h2>
+        <p class="culture-copy reveal">A identidade da Puglia vive na mesa, nas ruas de pedra, nas festas populares e no trabalho de gerações. É uma região que preserva suas raízes enquanto recebe visitantes do mundo todo.</p>
+        <div class="culture-tags reveal"><span>GASTRONOMIA</span><span>ARQUITETURA</span><span>TRADIÇÕES</span></div>
+      </div>
+      <div class="culture-decoration">VIVI · AMA · SCOPRI</div>
+    </section>
+
+    <section class="flavors section-pad">
+      <div class="section-label reveal"><span>04</span> / SABORES DA REGIÃO</div>
+      <div class="section-heading-row">
+        <h2 class="display-heading reveal">A Itália também<br>se <em>saboreia.</em></h2>
+        <p class="section-description reveal">Receitas simples, ingredientes locais e sabores que fazem parte da vida cotidiana.</p>
+      </div>
+      <div class="flavor-grid">
+        <article class="flavor-card reveal"><span class="flavor-icon">✳</span><h3>Orecchiette</h3><p>Massa tradicional em formato de pequenas orelhas, frequentemente servida com folhas de nabo.</p><span class="flavor-line"></span></article>
+        <article class="flavor-card reveal"><span class="flavor-icon">✳</span><h3>Azeite de oliva</h3><p>As oliveiras fazem parte da paisagem e da tradição agrícola da região.</p><span class="flavor-line"></span></article>
+        <article class="flavor-card reveal"><span class="flavor-icon">✳</span><h3>Burrata</h3><p>Queijo fresco de textura cremosa, conhecido por seu interior macio.</p><span class="flavor-line"></span></article>
+      </div>
+    </section>
+
+    <section class="video-section section-pad" id="video">
+      <div class="section-label reveal"><span>05</span> / NOSSO OLHAR</div>
+      <div class="video-heading">
+        <h2 class="display-heading reveal">Puglia pelos<br><em>nossos olhos.</em></h2>
+        <p class="section-description reveal">Uma apresentação feita pelo nosso grupo para compartilhar um pouco dessa região incrível.</p>
+      </div>
+      <div class="video-frame reveal" id="videoFrame">
+        <video id="groupVideo" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1800&q=85">
+          <source src="video/puglia.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div class="play-ring"><span>▶</span></div>
+          <p>O NOSSO VÍDEO</p>
+          <small>Adicione o vídeo do grupo à pasta <code>video</code> e nomeie como <code>puglia.mp4</code>.</small>
+        </div>
+        <div class="video-corner video-corner-tl"></div><div class="video-corner video-corner-br"></div>
+      </div>
+      <div class="video-caption"><span><i class="live-dot"></i> PROJETO FEIRA CULTURAL</span><span>UM OLHAR SOBRE A PUGLIA <b>↗</b></span></div>
+    </section>
+
+    <section class="closing" id="explorar">
+      <div class="closing-glow"></div>
+      <p class="eyebrow reveal">GRAZIE PER AVER VIAGGIATO CON NOI</p>
+      <h2 class="closing-title reveal">Até logo,<br><em>Puglia.</em></h2>
+      <p class="closing-copy reveal">Um pequeno pedaço da Itália. Uma grande história para descobrir.</p>
+      <a class="button button-primary reveal" href="#inicio"><span>Voltar ao início</span><span class="button-icon">↑</span></a>
+      <div class="credits reveal"><span>FEIRA CULTURAL · <b>PUGLIA, ITÁLIA</b></span><span>FEITO COM CURIOSIDADE <i>✦</i></span></div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
